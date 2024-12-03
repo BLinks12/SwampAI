@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwampAI ($SWAMP)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        body {
+            font-family: 'VT323', monospace;
+            background-color: #163613;
+            color: #00ff00;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #00ff00;
+        }
+        .title {
+            font-size: 3em;
+            margin: 40px 0;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #ffffff;
+        }
+        .ascii-art {
+            white-space: pre;
+            margin: 40px auto;
+            font-size: 12px;
+            color: #00ff00;
+            line-height: 1.3;
+            animation: glitch 1.5s infinite;
+        }
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ff00;
+                transform: translate(0, 0);
+            }
+            25% {
+                text-shadow: -2px -2px 0 #ff0000, 2px 2px 0 #00ff00;
+                transform: translate(2px, -2px);
+            }
+            50% {
+                text-shadow: 2px -2px 0 #ff0000, -2px 2px 0 #00ff00;
+                transform: translate(-2px, 2px);
+            }
+            75% {
+                text-shadow: -2px 2px 0 #ff0000, 2px -2px 0 #00ff00;
+                transform: translate(2px, 2px);
+            }
+            100% {
+                text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ff00;
+                transform: translate(0, 0);
+            }
+        }
+        .description {
+            margin-top: 40px;
+            font-size: 1.5em;
+            color: #ffffff;
+            padding: 0 10%;
+        }
+        .ai-functionality {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #112b11;
+            border: 3px solid #00ff00;
+            color: #00ff00;
+            font-size: 1.3em;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .ai-functionality h2 {
+            color: #00ff00;
+            margin-bottom: 20px;
+        }
+        .contract-address {
+            margin-top: 30px;
+            font-size: 1.5em;
+            color: #00ff00;
+        }
+        .feed-swamp {
+            margin: 60px auto;
+            font-size: 1.3em;
+        }
+        .feed-swamp h2 {
+            color: #00ff00;
+            font-size: 1.8em;
+        }
+        .feed-swamp form input {
+            font-size: 1em;
+            padding: 10px;
+            margin: 15px 0;
+            width: 60%;
+            border: 2px solid #00ff00;
+            background-color: #ffffff;
+            color: #001a00;
+        }
+        .feed-swamp form button {
+            font-size: 1em;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #00ff00;
+            border: none;
+            cursor: pointer;
+        }
+        .voting-section {
+            margin-top: 60px;
+            font-size: 1.3em;
+            color: #00ff00;
+        }
+        .voting-section h2 {
+            color: #00ff00;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .voting-section .vote-item {
+            margin: 15px auto;
+            padding: 15px;
+            width: 70%;
+            background-color: #112b11;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+        }
+        .voting-section button {
+            font-size: 1em;
+            padding: 10px 15px;
+            margin-left: 10px;
+            color: #ffffff;
+            background-color: #00ff00;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 60px;
+            padding: 30px 0;
+            background-color: #111;
+            color: #888;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://x.com/SwampAIonSol" target="_blank">Twitter</a>
+        <a href="https://t.me/SwampAI" target="_blank">Telegram</a>
+    </nav>
+    <div class="title">WELCOME TO SWAMP AI ($SWAMP)</div>
+    <div class="ascii-art">
+        <!-- Paste your Shrek ASCII art here -->
+    </div>
+    <div class="description">
+        The ultimate memecoin AI agent, powered by ogre energy. Troll the swamp, hype the kingdom, and let SwampAI do the dirty work.
+    </div>
+    <div class="ai-functionality">
+        <h2>How SwampAI Works</h2>
+        <p>
+            🐸 SwampAI uses advanced AI to analyze crypto projects submitted by the community.  
+            🌿 **Step 1:** Feed the swamp with links to projects or influencers.  
+            🔥 **Step 2:** Vote to send them into the Swamp of Shame or crown them Royal of the Land.  
+            🧅 **Step 3:** SwampAI delivers memes, FUD, or praise based on your votes.
+        </p>
+        <p>
+            Join the chaos and let SwampAI bring ogre logic to the crypto world.
+        </p>
+    </div>
+    <div class="contract-address">CA: TBA</div>
+    <div class="feed-swamp">
+        <h2>Feed the Swamp</h2>
+        <p>Submit a project for SwampAI to evaluate:</p>
+        <form id="feed-swamp-form">
+            <input type="url" id="swamp-link" placeholder="Paste the project link here..." required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="voting-section">
+        <h2>Swamp of Shame or Royal of the Land</h2>
+        <p>Vote for the next project SwampAI should troll or praise:</p>
+        <div id="voting-container">
+            <!-- Dynamic voting items will appear here -->
+        </div>
+    </div>
+    <footer>© 2024 SwampAI | Memes, chaos, and ogre power.</footer>
+    <script src="swamp.js"></script>
+</body>
+</html>
